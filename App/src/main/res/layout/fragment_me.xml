@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_margin="@dimen/dp_20"
+            android:src="@mipmap/photo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/go_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_12"
+            android:text="登录/注册 >"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_13"
+            app:layout_constraintBottom_toTopOf="@id/photo"
+            app:layout_constraintLeft_toRightOf="@id/photo"
+            app:layout_constraintTop_toBottomOf="@id/photo" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@color/colorBg"
+            app:layout_constraintTop_toBottomOf="@id/photo" />
+
+        <TextView
+            android:id="@+id/my_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_16"
+            android:drawablePadding="@dimen/dp_10"
+            android:text="我的订单"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_13"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line1" />
+
+        <TextView
+            android:id="@+id/un_pay_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:drawableTop="@mipmap/me_unpay"
+            android:drawablePadding="@dimen/dp_6"
+            android:text="待付款"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_14"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/un_send_order"
+            app:layout_constraintTop_toBottomOf="@+id/my_order" />
+
+        <TextView
+            android:id="@+id/un_send_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:drawableTop="@mipmap/me_unsend"
+            android:drawablePadding="@dimen/dp_6"
+            android:text="待发货"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_14"
+            app:layout_constraintLeft_toRightOf="@+id/un_pay_order"
+            app:layout_constraintRight_toLeftOf="@+id/un_receive_order"
+            app:layout_constraintTop_toBottomOf="@+id/my_order" />
+
+        <TextView
+            android:id="@+id/un_receive_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:drawableTop="@mipmap/me_unreceive"
+            android:drawablePadding="@dimen/dp_6"
+            android:text="待收货"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_14"
+            app:layout_constraintLeft_toRightOf="@+id/un_send_order"
+            app:layout_constraintRight_toLeftOf="@+id/finished_order"
+            app:layout_constraintTop_toBottomOf="@+id/my_order" />
+
+        <TextView
+            android:id="@+id/finished_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:drawableTop="@mipmap/me_finished"
+            android:drawablePadding="@dimen/dp_6"
+            android:text="已完成"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_14"
+            app:layout_constraintLeft_toRightOf="@+id/un_receive_order"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_order" />
+
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@color/colorBg"
+            app:layout_constraintTop_toBottomOf="@id/finished_order" />
+
+        <com.zss.ui.row.RowSettingText
+            android:id="@+id/address_mgr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line2"
+            app:rst_title="地址管理" />
+
+        <com.zss.ui.row.RowSettingText
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address_mgr"
+            app:rst_title="帮助与客服" />
+
+        <com.zss.ui.row.RowSettingText
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/help"
+            app:rst_bottomLineShow="false"
+            app:rst_title="设置" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

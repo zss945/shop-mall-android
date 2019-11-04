@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingRight="@dimen/dp_16">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSummary"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.zss.ui.tagview.TagContainerLayout
+        android:id="@+id/tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        app:container_background_color="@color/colorWhite"
+        app:container_border_color="@color/colorWhite"
+        app:container_enable_drag="false"
+        app:horizontal_interval="@dimen/dp_16"
+        app:vertical_interval="@dimen/dp_16"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:tag_clickable="true"
+        app:tag_selectable="true"
+        app:tag_theme="none"
+        app:tag_text_color="@color/colorGray"
+        app:tag_border_color="@color/colorLine"
+        app:tag_background_color="@color/colorLine"
+        app:tag_ripple_duration="0"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:padding="@dimen/dp_12">
+
+    <TextView
+        android:id="@+id/consignee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="0.2"
+        android:singleLine="true"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/text_13"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/phone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="0.8"
+        android:singleLine="true"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/text_13"
+        android:paddingLeft="@dimen/dp_8"
+        app:layout_constraintLeft_toRightOf="@id/consignee"
+        app:layout_constraintRight_toRightOf="@id/right_image"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:maxLines="2"
+        android:textColor="@color/colorSummary"
+        android:textSize="@dimen/text_13"
+        android:paddingLeft="@dimen/dp_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="0.8"
+        app:layout_constraintLeft_toRightOf="@id/consignee"
+        app:layout_constraintRight_toLeftOf="@id/right_image"
+        app:layout_constraintTop_toBottomOf="@id/phone" />
+
+    <TextView
+        android:id="@+id/is_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_11"
+        android:text="默认"
+        android:layout_marginTop="@dimen/dp_4"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingBottom="@dimen/dp_4"
+        android:paddingLeft="@dimen/dp_6"
+        android:paddingRight="@dimen/dp_6"
+        android:background="@drawable/button_accent"
+        app:layout_constraintTop_toBottomOf="@id/consignee"
+        app:layout_constraintLeft_toLeftOf="@id/consignee"/>
+
+
+    <ImageView
+        android:id="@+id/right_image"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:padding="@dimen/dp_10"
+        android:src="@mipmap/icon_edit"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/phone"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">首选服饰</string>
+    <string name="title_home">首页</string>
+    <string name="title_cart">购物车</string>
+    <string name="title_me">我的</string>
+</resources>

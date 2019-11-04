@@ -1,0 +1,66 @@
+<resources>
+
+    <style name="Toolbar.TitleTheme" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/colorTranslucent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Button.General" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/button_general</item>
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="AppTheme.Button.Primary" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/button_primary</item>
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.Button.Accent" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/button_accent</item>
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.TextButton.General" parent="android:Widget.TextView">
+        <item name="android:background">@drawable/button_general</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dp_16</item>
+        <item name="android:paddingRight">@dimen/dp_16</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:paddingBottom">@dimen/dp_10</item>
+    </style>
+
+    <style name="AppTheme.TextButton.Primary" parent="android:Widget.TextView">
+        <item name="android:background">@drawable/button_primary</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dp_16</item>
+        <item name="android:paddingRight">@dimen/dp_16</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:paddingBottom">@dimen/dp_10</item>
+    </style>
+
+    <style name="AppTheme.TextButton.Accent" parent="android:Widget.TextView">
+        <item name="android:background">@drawable/button_accent</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dp_16</item>
+        <item name="android:paddingRight">@dimen/dp_16</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:paddingBottom">@dimen/dp_10</item>
+    </style>
+
+</resources>

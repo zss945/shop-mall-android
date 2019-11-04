@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_number_bg">
+
+    <ImageView
+        android:id="@+id/sub"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:src="@drawable/button_number_sub"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:digits="0123456789"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:padding="@dimen/dp_2"
+        android:singleLine="true"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/text_14"
+        android:textCursorDrawable="@null" />
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:src="@drawable/button_number_add"
+        android:gravity="center"/>
+</LinearLayout>

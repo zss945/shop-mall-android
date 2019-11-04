@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:src="@mipmap/photo"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/photo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/colorText"
+            android:text="点击修改头像"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <com.zss.ui.row.RowSettingText
+        android:id="@+id/user_id"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        app:rst_title="用户ID" />
+
+    <com.zss.ui.row.RowSettingText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        app:rst_title="手机号码" />
+
+    <com.zss.ui.row.RowSettingText
+        android:id="@+id/update_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        app:rst_title="账号安全" />
+
+
+</LinearLayout>

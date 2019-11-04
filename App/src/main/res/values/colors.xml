@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorOrange">#fffced</color>
+    <color name="colorGreen">#2bab52</color>
+    <color name="colorWhiteTranslucent">#80ffffff</color>
+    <color name="colorBlackTranslucent">#80000000</color>
+
+    <!-- 业务相关颜色 -->
+    <color name="captionBg">#f0ece1</color>
+
+</resources>

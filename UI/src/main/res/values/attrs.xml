@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- 可展开的TextView -->
+    <declare-styleable name="ExpandableTextView">
+        <attr name="etv_maxLinesOnShrink" format="reference|integer" />
+        <attr name="etv_ellipsisHint" format="reference|string" /><!--default is ..-->
+        <attr name="etv_toExpandHint" format="reference|string" /><!--"to expand" hint string, default is "Expand"-->
+        <attr name="etv_toShrinkHint" format="reference|string" /><!--"to shrink" hint string, default is "Shrink"-->
+        <attr name="etv_gapToExpandHint" format="reference|string" /><!--gap between "toExpandHint" and "trimmed text"-->
+        <attr name="etv_gapToShrinkHint" format="reference|string" /><!--gap between "toShrinkHint" and "trimmed text"-->
+        <attr name="etv_enableToggle" format="reference|boolean" /><!--if toggle the state when click ExpandTextView-->
+        <attr name="etv_toExpandHintShow" format="reference|boolean" /><!--if show "toExpandHint"-->
+        <attr name="etv_toShrinkHintShow" format="reference|boolean" /><!--if show "toShrinkHint"-->
+        <attr name="etv_toExpandHintColor" format="reference|color" /><!--text color of "toExpandHint"-->
+        <attr name="etv_toShrinkHintColor" format="reference|color" /><!--text color of "toShrinkHint"-->
+        <attr name="etv_toExpandHintColorBgPressed" format="reference|color" /><!--background color if "toExpandHint" pressed-->
+        <attr name="etv_toShrinkHintColorBgPressed" format="reference|color" /><!--background color if "toShrinkHint" pressed-->
+        <attr name="etv_initState" format="enum"><!--init state, default is shrink-->
+            <enum name="shrink" value="0" />
+            <enum name="expand" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- RowSettingText -->
+    <declare-styleable name="RowSettingText">
+        <attr name="rst_leftImage" format="reference|integer" />
+        <attr name="rst_rightImage" format="reference|integer" />
+        <attr name="rst_title" format="string" />
+        <attr name="rst_summary" format="string" />
+        <attr name="rst_status" format="string" />
+        <attr name="rst_bottomLineShow" format="reference|boolean" />
+    </declare-styleable>
+
+    <!-- RowSettingSwitch -->
+    <declare-styleable name="RowSettingSwitch">
+        <attr name="rss_title" format="string" />
+        <attr name="rss_summary" format="string" />
+        <attr name="rss_bottomLineShow" format="reference|boolean" />
+    </declare-styleable>
+
+    <!-- RowText -->
+    <declare-styleable name="RowText">
+        <attr name="rt_leftImage" format="reference|integer" />
+        <attr name="rt_rightImage" format="reference|integer" />
+        <attr name="rt_text" format="string" />
+        <attr name="rt_hint" format="string" />
+        <attr name="rt_bottomLineShow" format="reference|boolean" />
+    </declare-styleable>
+
+    <!-- RowEdit -->
+    <declare-styleable name="RowEdit">
+        <attr name="re_leftImage" format="reference|integer" />
+        <attr name="re_rightImage" format="reference|integer" />
+        <attr name="re_hint" format="string" />
+        <attr name="re_input_type">
+            <enum name="disabled" value="0" />
+            <enum name="text" value="1" />
+            <enum name="number" value="2" />
+            <enum name="phone" value="3" />
+            <enum name="email" value="4" />
+            <enum name="password" value="5" />
+            <enum name="number_password" value="6" />
+        </attr>
+        <attr name="re_bottomLineShow" format="reference|boolean" />
+    </declare-styleable>
+
+    <!-- TagView -->
+    <declare-styleable name="AndroidTagView">
+        <attr name="vertical_interval" format="dimension" />
+        <attr name="horizontal_interval" format="dimension" />
+
+        <attr name="container_border_width" format="dimension" />
+        <attr name="container_border_radius" format="dimension" />
+        <attr name="container_border_color" format="color" />
+        <attr name="container_background_color" format="color" />
+        <attr name="container_enable_drag" format="boolean" />
+        <attr name="container_drag_sensitivity" format="float" />
+        <attr name="container_max_lines" format="integer" />
+        <attr name="container_gravity" format="enum">
+            <enum name="left" value="3" />
+            <enum name="center" value="17" />
+            <enum name="right" value="5" />
+        </attr>
+
+        <attr name="tag_border_width" format="dimension" />
+        <attr name="tag_corner_radius" format="dimension" />
+        <attr name="tag_horizontal_padding" format="dimension" />
+        <attr name="tag_vertical_padding" format="dimension" />
+        <attr name="tag_text_size" format="dimension" />
+        <attr name="tag_bd_distance" format="dimension" />
+        <attr name="tag_text_color" format="color" />
+        <attr name="tag_border_color" format="color" />
+        <attr name="tag_background_color" format="color" />
+        <attr name="tag_max_length" format="integer" />
+        <attr name="tag_clickable" format="boolean" />
+        <attr name="tag_selectable" format="boolean" />
+        <attr name="tag_theme" format="enum">
+            <enum name="none" value="-1" />
+            <enum name="random" value="0" />
+            <enum name="pure_cyan" value="1" />
+            <enum name="pure_teal" value="2" />
+        </attr>
+        <attr name="tag_text_direction" format="enum">
+            <enum name="ltr" value="3" />
+            <enum name="rtl" value="4" />
+        </attr>
+        <attr name="tag_ripple_color" format="color" />
+        <attr name="tag_ripple_alpha" format="integer" />
+        <attr name="tag_ripple_duration" format="integer" />
+
+        <attr name="tag_enable_cross" format="boolean" />
+        <attr name="tag_cross_width" format="dimension" />
+        <attr name="tag_cross_color" format="color" />
+        <attr name="tag_cross_line_width" format="dimension" />
+        <attr name="tag_cross_area_padding" format="dimension" />
+        <attr name="tag_support_letters_rlt" format="boolean" />
+        <attr name="tag_background" format="reference" />
+    </declare-styleable>
+
+</resources>

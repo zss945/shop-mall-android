@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zss.mall">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".activity.splash.SplashActivity"
+            android:theme="@style/AppTheme.Fullscreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".activity.home.HomeActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize" />
+
+        <activity
+            android:name=".activity.select_spec.SelectSpecActivity"
+            android:theme="@style/AppTheme.Black.Translucent"
+            android:configChanges="orientation|screenSize" />
+
+        <activity
+            android:name=".activity.select_area.SelectAreaActivity"
+            android:theme="@style/AppTheme.Black.Translucent"
+            android:configChanges="orientation|screenSize" />
+
+        <activity
+            android:name="com.zss.ui.activity.BaseFragmentActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <activity
+            android:name="com.zss.ui.activity.ToolbarFragmentActivity"
+            android:configChanges="orientation|screenSize" />
+
+    </application>
+
+</manifest>
