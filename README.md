@@ -13,16 +13,26 @@
 ## 项目框架
 项目框架采用MVP实现，网络通讯（retrofit + RxJava2），本地数据库通讯（room + RxJava2）
 用到的开源框架：
+
 [butterknife](https://github.com/JakeWharton/butterknife)
+
 [glide](https://github.com/bumptech/glide)
+
 [eventBus](https://github.com/greenrobot/EventBus)
 [RxJava2](http://github.com/ReactiveX/RxJava)
+
 [retrofit](https://github.com/square/retrofit)
+
 [vlayout](https://github.com/alibaba/vlayout)
-[BadgeView](https://github.com/qstumn/BadgeView)
+
 [UltraViewPager](https://github.com/alibaba/UltraViewPager)
+
+[BadgeView](https://github.com/qstumn/BadgeView)
+
 [SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)
+
 [SystemBarTint](https://github.com/jgilfelt/SystemBarTint)
+
 
 ## 最后商城github地址
 [https://github.com/zss945/shop-mall-android](https://github.com/zss945/shop-mall-android)
