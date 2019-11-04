@@ -1,6 +1,6 @@
 超简单商城app架构，只有核心功能：首页、购物车、我的，最适合做二次开发的开源框架。
 
-### 界面效果
+## 界面效果
 
 ![31572838592_.pic.jpg](https://upload-images.jianshu.io/upload_images/8037343-08c0086d6b6d7658.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/480)
 
@@ -24,7 +24,7 @@
 [SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)
 [SystemBarTint](https://github.com/jgilfelt/SystemBarTint)
 
-最后商城github地址
+## 最后商城github地址
 [https://github.com/zss945/shop-mall-android](https://github.com/zss945/shop-mall-android)
 
 ```
